@@ -23,7 +23,7 @@ Run proj3.ipynb
 
 3. Clustering addresses
 
-	a. The lowest address of the entity controlling the greatest number of bitcoins is pk_id #172. The total value of all bitcoins it controls is 98346739827397
+	a. The lowest address of the entity controlling the greatest number of bitcoins is pk_id #172. The total value of all bitcoins it controls is 98346739827397.
 	
 	b. Transaction #93039 sends the entity above 4675300000000, which is the largest value that another entity sends to this one.
 	
