@@ -1,6 +1,9 @@
 # Crypto2017fall
 Utku Evci - ue225
+
 Andy Le - al4099
+
+Run proj3.ipynb
 
 
 1. Invalid blocks
@@ -16,12 +19,13 @@ Andy Le - al4099
 	10. Block #97423 - Output #249860 has already been spent.
 
 
-2. After removing the above invalid blocks, there are 71,889 UTXOs that exist at of the last block in the data set. UTXO #170430 has the highest associated value, of 9000000000000. 
+2. After removing the above invalid blocks, there are 71,889 UTXOs that exist at of the last block in the data set. UTXO #170430 has the highest associated value, of 9000000000000. Note: we had 10 errors with finding inputs for some transactions, but if we tried invalidating those transactions, then many other transactions also became invalidated, so we left those 10 transactions in the UTXO set. 
 
 3. Clustering addresses
-	a. 
+
+	a. The lowest address of the entity controlling the greatest number of bitcoins is pk_id #172. The total value of all bitcoins it controls is 98346739827397
 	
-	b.
+	b. Transaction #93039 sends the entity above 4675300000000, which is the largest value that another entity sends to this one.
 	
 	c. False positives can exist in our clustering because we assumed that every N-to-1 transaction is owned by the same entity. In reality, maybe the N input transactions are owned by different individuals, who decided to purchase/send their btc to someone else. Moreover, for 1-to-1 transactions, we assumed that since there is no change address, that the same party owns both the input and output addresses. However, it is also possible that someone decided to send all of their btc (in the input address) to someone else, so there is no change address, but they are two different parties. 
 	
